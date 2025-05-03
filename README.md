@@ -105,3 +105,32 @@ rm -rf contracts/* & mv scripts/fdcExample/Base.ts ./Base.ts & rm -rf scripts/* 
 - [Flare Developer Hub](https://dev.flare.network/)
 - [Hardhat Guides](https://dev.flare.network/fdc/guides/hardhat)
 - [Hardhat Docs](https://hardhat.org/docs)
+
+## Recent Updates
+
+### Deployment Details
+
+#### Contracts Deployed to Coston2 Testnet
+
+- **AIXToken**: `0xDbc8f7dEC4AFc05602Ed7f78D73BDE4548636aa4`
+- **MockFTSORegistry**: `0x0eDbFd7C0D2567391c100c16F968C84f24276857`
+- **ResourcePriceOracle**: `0x4cFEb2E673c9BB12Fc4232f4f3eb2e5b353782f8`
+- **MockFDCClient**: `0xdE88FB8DA5dE0b90B488859d863357a1eF9bbEaB`
+- **RecallVerifier**: `0x131d515996356367014Ef8fc2CFC036cD715E96c`
+- **AIXValidator**: `0xa2A5FA0C4eF3A7d2d4F2e965360197F4DE226c19`
+
+### Changes Made
+
+1. **MockFTSORegistry Contract**
+
+   - Created a mock contract to simulate the FTSO registry for testing purposes.
+   - File: `contracts/aix/MockFTSORegistry.sol`
+
+2. **MockFDCClient Contract**
+
+   - Created a mock contract to simulate the FDC client for testing purposes.
+   - File: `contracts/aix/MockFDCClient.sol`
+
+3. **Deployment Script**
+   - Updated the deployment script to deploy all contracts and log their addresses.
+   - File: `scripts/deploy-aix.js`
